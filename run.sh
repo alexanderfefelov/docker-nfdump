@@ -14,5 +14,5 @@ fi
 
 echo NetFlow data directory: $NETFLOW_DATA_DIR
 
-docker run --name nfdump-data --volume $NETFLOW_DATA_DIR:/data alexanderfefelov/docker-nfdump-data
-docker run --name nfdump-collector --net host --restart always --detach --volume /etc/localtime:/etc/localtime:ro --volumes-from nfdump-data alexanderfefelov/docker-nfdump-collector
+docker run --name nfdump-data --volume $NETFLOW_DATA_DIR:/data alexanderfefelov/nfdump-data
+docker run --name nfdump-collector --net host --restart always --detach --volume /etc/localtime:/etc/localtime:ro --volumes-from nfdump-data alexanderfefelov/nfdump-collector

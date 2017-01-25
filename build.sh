@@ -1,4 +1,4 @@
 #!/bin/sh
 
-docker build --tag alexanderfefelov/docker-nfdump-data data
-docker build --tag alexanderfefelov/docker-nfdump-collector collector
+docker build --tag alexanderfefelov/nfdump-data data
+docker build --tag alexanderfefelov/nfdump-collector collector
